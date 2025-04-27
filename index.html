@@ -10,7 +10,7 @@
         <!-- header -->
         <header id="header">
             <img id="header-img" alt="logo" src="https://cdn.vectorstock.com/i/1000x1000/57/85/flat-design-bee-isolated-vector-37175785.webp">
-            <nav class="nav-bar">
+            <nav id="nav-bar" >
                 <a class="nav-link" href="#chi">chi</a>
                 <a class="nav-link" href="#come">come</a>
                 <a class="nav-link" href="#prezzi">prezzi</a>
@@ -19,27 +19,37 @@
         <!-- main -->
         <main>
             <!-- form -->
-            <form action="https://www.freecodecamp.com/email-submit">
-                <h4>enter ur email</h4>
-                <input type="email" id="email" placeholder="enter ur email">
-                <input type="submit">
+            <form action="https://www.freecodecamp.com/email-submit" id="form">
+                <h4>inserisci la mail per promozioni</h4>
+                <div class="input-container">
+                    <input name="email" type="email" id="email" placeholder="inserisci la tua email">
+                    <input type="submit" id="submit">
+                </div>
             </form>
-            <p id="chi">chi: bla bla bla bla bla bla </p>
-            <p id="come">come: bla bla bla bla bla bla </p>
-            <iframe 
-                id="video"
-                width="300" 
-                height="200" 
-                src="https://www.youtube.com/embed/2cEjvX3mmYk" 
-                title="You Won&#39;t Believe How Farmers Harvest Millions of tons of Honey from dangerous cliffs" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-            </iframe>
-            <p id="prezzi"> PREZZO: 1000000$</p>
+            <div class="chi-div">
+                <h4 class="chi-title">chi</h4>
+                <p id="chi">Siamo una famiglia di apicoltori da tre generazioni che coltiva con passione e rispetto il rapporto con le nostre api. La nostra attività nasce nel cuore della campagna umbra, dove fin da bambino ho appreso dall'esperienza di mio nonno l'arte antica dell'apicoltura. Ogni giorno ci prendiamo cura dei nostri alveari con dedizione, controllando la salute delle colonie e assicurandoci che le api abbiano tutto il necessario per produrre un miele di qualità superiore. La nostra filosofia si basa sul rispetto dei ritmi naturali e sul benessere delle api, garantendo metodi di produzione sostenibili e artigianali. </p>
+            </div>
+            <div class="come-div">
+                <h4 class="come-title">come</h4>
+                <p id="come">Il processo di produzione del nostro miele segue metodi tradizionali e naturali. Le api bottinano il nettare dai fiori selezionati del nostro territorio, lo trasformano attraverso un processo enzimatico naturale e lo depositano nei favi. Quando il miele raggiunge la giusta maturazione, procediamo con l'estrazione a freddo per preservare tutte le proprietà nutritive e organolettiche. Dopo una decantazione naturale per eliminare eventuali impurità, il miele viene invasettato senza alcun trattamento termico o filtrazione aggressiva. Questo metodo artigianale garantisce un prodotto puro, genuino e ricco di tutti gli elementi naturali che lo rendono un alimento prezioso e benefico. </p>
+            </div>
+            <section>
+                <p id="prezzi"> <span>PREZZO</span> al 1/kg -><span>20$</span> </p>
+                <iframe 
+                    id="video"
+                    src="https://www.youtube.com/embed/2cEjvX3mmYk" 
+                    title="You Won&#39;t Believe How Farmers Harvest Millions of tons of Honey from dangerous cliffs" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </section>
         </main>
         <footer class="footer">
+            <p>chiama il 388******** per ricevere il tuo miele </p>
+            <p class="">made in italy from greve in chianti </p>
         </footer>
     </body>
 </html>

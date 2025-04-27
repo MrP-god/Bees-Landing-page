@@ -2,20 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid;
 }
 
 html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: #FCE0AB;
+    color: #563E10;
+}
+
+/* haeder */
 img {
     width: 10rem;
     height: 10rem;
 }
 
 header {
-    border: 1px solid red;
     width: 100%;
     height: 10rem;
     display: flex;
@@ -34,9 +38,131 @@ nav {
 
 nav a {
     text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background-color: #EFB74D;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+/* main */
+
+
+/* form */
+form {
+    text-align: center;
+    width: 30rem;
+    height: 25rem;
+    margin: 1rem  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+form h4 {
+    font-size: 2rem;
+    margin-top: 5rem;
+    font-weight: 1000;
 }
 
 
-main {
-    border: 1px solid blue;
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 10rem;
+    align-items: center;
+}
+
+.input-container #submit {
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+    background-color: #EFB74D;
+    font-size: 1.5rem;
+}
+
+.input-container #submit:hover {
+    font-size: 1.7rem;
+}
+
+.input-container #email {
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: #B88019;
+    color: white;
+}
+
+.input-container #email::placeholder {
+    color: white;
+}
+
+.input-container #email:hover {
+    font-size: 2.1rem;
+}
+
+/* main texts */
+
+.chi-div ,.come-div {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.chi-div {
+    margin-left: 10rem;
+    width: 90rem;
+}
+
+.chi-div h4, .come-div h4 {
+    font-size: 5rem;
+    margin: 1rem 1rem;
+    color: #B88019;
+}
+
+.chi-div p, .come-div p {
+    margin: 1rem 1rem;
+}
+
+.come-div {
+    margin-left: 35rem ;
+    width: 90rem;
+}
+
+/* video + prices section */
+
+section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+}
+
+section #video {
+    margin: 0 auto;
+    width: 600px;
+    height: 350px;
+}
+
+section #prezzi {
+    margin-left: 10rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+section span {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/* footer */
+
+.footer {
+    height: 6rem;
+    text-align: center;
+    font-size: 2rem;
 }
