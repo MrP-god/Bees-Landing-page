@@ -11,6 +11,9 @@ html {
 body {
     background-color: #FCE0AB;
     color: #563E10;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: 1fr auto;
 }
 
 /* haeder */
