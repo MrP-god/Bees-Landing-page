@@ -25,6 +25,13 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    background-color: #FCE0AB;
+}
+
+main {
+    margin-top: 10rem;
 }
 
 nav {
@@ -109,7 +116,8 @@ form h4 {
 
 .chi-div ,.come-div {
     display: flex;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    width: 100%;
 }
 
 .chi-div {
@@ -125,6 +133,8 @@ form h4 {
 
 .chi-div p, .come-div p {
     margin: 1rem 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .come-div {
@@ -165,4 +175,59 @@ section span {
     height: 6rem;
     text-align: center;
     font-size: 2rem;
+    border-top: 1px solid ;
 }
+
+.position {
+    color: black;
+}
+
+
+
+/* media querry - responsive for smartphones */
+
+@media (max-width: 768px) {
+
+    .chi-div, .come-div {
+        margin: 0;
+        width: 100%;
+    }
+
+    .chi-div p, .come-div p {
+        font-size: 1.5rem;
+    }
+
+
+    section {
+        flex-direction: column;
+        margin-top: 5rem;
+        width: 100%;
+        height: 100%;
+    }
+
+    section p {
+        order: 1;
+        margin: 5rem auto;;
+    }
+
+    section #video {
+        width: auto;
+        height: auto;
+        min-width: 400px;
+        min-height: 250px;
+    }
+}
+
+@media (min-width: 800px) {
+
+    .chi-div, .come-div {
+        margin: 0;
+        width: 100%;
+    }
+
+    .chi-div p, .come-div p {
+        font-size: 1.6rem;
+    }
+}
+
+
